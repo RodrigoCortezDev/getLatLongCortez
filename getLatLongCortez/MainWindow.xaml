@@ -1,0 +1,30 @@
+﻿<Window x:Class="getLatLongCortez.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:getLatLongCortez"
+        mc:Ignorable="d"
+        Title="Consulta Latitude e longitude" 
+        WindowStartupLocation="CenterScreen"
+        WindowState="Normal"
+        WindowStyle="SingleBorderWindow"
+        BorderThickness="2"
+        Height="398.069" Width="525" ResizeMode="CanMinimize">
+    <Canvas>
+        <TextBlock Text="Endereço:" VerticalAlignment="Top" Height="20" Canvas.Left="13" Canvas.Top="18" RenderTransformOrigin="0.559,0.5"/>
+        <TextBox Name="txtEndereco" Height="20" Canvas.Left="75" TextWrapping="Wrap" Text="325, Rua dos Ipes Roxos, Presidente Prudente, SP" Canvas.Top="18" Width="421"/>
+        <Button Name="btnConsulta" Content="Consulta" Canvas.Left="75" Canvas.Top="43" Width="133" Click="ButtonBase_OnClick" Height="30"/>
+        <Button Name="btnConsulta2" Content="Consulta Arquivo" Canvas.Left="363" Canvas.Top="111" Width="133" Click="btnConsultaArquivo_OnClick" Height="30"/>
+
+        <ProgressBar Name="pbCosulta" Visibility="Collapsed" IsIndeterminate="True" Width="133" Height="9" Canvas.Left="179"/>
+
+        <TextBlock Text="Lat:" Height="20" Canvas.Left="47" Canvas.Top="96"/>
+        <TextBox Name="txtLat" Height="20" IsReadOnly="True" Canvas.Left="75" TextWrapping="Wrap" Text="" Canvas.Top="96" Width="195"/>
+        <TextBlock Text="Long:" Height="20" Canvas.Left="36" Canvas.Top="121"/>
+        <TextBox Name="txtlong"  Height="20" IsReadOnly="True" Canvas.Left="75" TextWrapping="Wrap" Text="" Canvas.Top="121" Width="195"/>
+
+        <TextBox Name="txtResult" IsReadOnly="True" TextWrapping="Wrap" AcceptsReturn="True" ScrollViewer.VerticalScrollBarVisibility="Visible" VerticalContentAlignment="Top" Height="197" Canvas.Left="10"  Text="" Canvas.Top="146" Width="486"/>
+
+    </Canvas>
+</Window>
