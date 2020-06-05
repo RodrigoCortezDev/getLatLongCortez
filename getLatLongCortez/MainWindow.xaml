@@ -15,7 +15,7 @@
         <TextBlock Text="Endereço:" VerticalAlignment="Top" Height="20" Canvas.Left="13" Canvas.Top="18" RenderTransformOrigin="0.559,0.5"/>
         <TextBox Name="txtEndereco" Height="20" Canvas.Left="75" TextWrapping="Wrap" Text="325, Rua dos Ipes Roxos, Presidente Prudente, SP" Canvas.Top="18" Width="421"/>
         <Button Name="btnConsulta" Content="Consulta" Canvas.Left="75" Canvas.Top="43" Width="133" Click="ButtonBase_OnClick" Height="30"/>
-        <Button Name="btnConsulta2" Content="Consulta Arquivo" Canvas.Left="363" Canvas.Top="111" Width="133" Click="btnConsultaArquivo_OnClick" Height="30"/>
+        <Button Name="btnConsulta2" Content=" Consulta Arquivo " Canvas.Left="363" Canvas.Top="111" Width="133" Click="btnConsultaArquivo_OnClick" Height="30"/>
 
         <ProgressBar Name="pbCosulta" Visibility="Collapsed" IsIndeterminate="True" Width="133" Height="9" Canvas.Left="179"/>
 
